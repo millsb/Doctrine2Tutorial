@@ -1,0 +1,17 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                    http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Tutorial\Entities\Project" table="projects">
+
+        <id name="id" type="integer" column="id"/>
+
+        <field name="name" type="string"/>
+        <field name="dueDate" type="string"/>
+
+        <many-to-one target-entity="Project" inversed-by="projects" field="employee"/>
+
+    </entity>
+
+</doctrine-mapping>
