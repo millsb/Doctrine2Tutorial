@@ -14,7 +14,7 @@
         <field name="jobTitle" type="string"/>
         <field name="hireDate" type="datetime"/>
 
-        <one-to-many target-entity="Project" mappedBy="employee" field="projects"/>
+        <one-to-many target-entity="Project" mapped-by="employee" field="projects"/>
 
     </entity>
 
