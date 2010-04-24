@@ -5,8 +5,10 @@
 
     <entity name="Tutorial\Entities\Employee" table="employees">
 
-        <id name="id" type="integer" column="id"/>
-
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        
         <field name="lastName" type="string"/>
         <field name="firstName" type="string"/>
         <field name="jobTitle" type="string"/>

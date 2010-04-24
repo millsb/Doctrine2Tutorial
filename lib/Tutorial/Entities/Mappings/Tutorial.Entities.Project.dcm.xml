@@ -5,8 +5,10 @@
 
     <entity name="Tutorial\Entities\Project" table="projects">
 
-        <id name="id" type="integer" column="id"/>
-
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        
         <field name="name" type="string"/>
         <field name="dueDate" type="string"/>
 
